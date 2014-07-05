@@ -1,0 +1,12 @@
+
+<div
+	class="game"
+	ng-keyup="keyup($event)"
+	ng-keydown="keydown($event)">
+	<div
+		class="renderable"
+		ng-repeat="renderable in renderables"
+		ng-style="renderable.style()">
+		<img ng-src="{{renderable.image.src}}">
+	</div>
+</div>
